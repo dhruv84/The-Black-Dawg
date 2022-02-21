@@ -1,0 +1,131 @@
+.span__dots {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+  transform: translateY(5px);
+
+  &-dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: $color-tertiary-2;
+    border-radius: 50%;
+  }
+}
+
+.moveUp-1 {
+  animation: moveUp 0.5s 0.5s linear;
+}
+
+.moveUp-2 {
+  animation: moveUp 0.5s 0.65s linear;
+}
+
+.moveUp-3 {
+  animation: moveUp 0.5s 0.85s linear;
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1.5rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.display-opacity {
+  opacity: 0;
+  height: 0;
+  padding: 0 5rem;
+  overflow: hidden;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.w-50 {
+  width: 50rem;
+}
+
+.w-100per {
+  width: 100%;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.blur {
+  filter: blur(0.3rem);
+}
+
+.line__height {
+  line-height: 3rem;
+}
+
+.letter__spacing {
+  letter-spacing: 0;
+}
+
+.btn__audio {
+  background: none;
+  border: none;
+  padding: 1rem;
+  display: flex;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-tertiary;
+  }
+}
+
+.cursor__container {
+  width: 4.5rem;
+  height: 4.5rem;
+  background-color: rgba($color: #000000, $alpha: 0.07);
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  transition: all 0.1s ease-out;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.cursor__container--2 {
+  background-color: $color-secondry;
+}
+
+.hide__cursor {
+  width: 0;
+  height: 0;
+}
+
+.note__svg {
+  width: 4rem;
+  height: 4rem;
+  margin-left: -2rem;
+  margin-right: -1rem;
+  background: url(../img/music-note.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.btn__quiz {
+  position: absolute;
+  right: -5rem;
+  top: 45%;
+  width: 3rem;
+  height: 3rem;
+  display: grid;
+  place-items: center;
+  background-color: $color-tertiary-2;
+  transform: translateY(-50%);
+  color: $color-secondry;
+}

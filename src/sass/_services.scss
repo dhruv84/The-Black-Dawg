@@ -1,0 +1,33 @@
+.services {
+  padding: 5rem 0;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 50rem);
+  position: relative;
+
+  &__service {
+    padding: 5rem 2rem;
+    transition: all 0.5s ease-out;
+
+    &:not(:last-child) {
+      border-bottom: 0.1rem solid;
+    }
+
+    &-divider {
+      border-right: 0.1rem solid;
+    }
+
+    &-heading {
+      margin-bottom: 1rem;
+      transition: all 0.5s ease-out;
+    }
+
+    &:hover {
+      background-color: $color-tertiary-2;
+    }
+
+    &:hover &-heading {
+      color: $color-secondry;
+    }
+  }
+}
