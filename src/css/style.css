@@ -130,7 +130,9 @@ h3 {
     width: fit-content; }
     @media (max-width: 40.62em) {
       .header__heading {
-        margin-left: 2rem; } }
+        flex-direction: column;
+        margin: 0 auto;
+        row-gap: 3rem; } }
   .header__typography {
     display: flex;
     flex-direction: column;
@@ -195,7 +197,7 @@ h3 {
   border-top: 2px solid; }
   @media (max-width: 80em) {
     .section {
-      padding: 5rem 2rem; } }
+      padding: 5rem 3rem; } }
   .section__heading {
     font-size: 8rem;
     font-weight: 300;
@@ -467,7 +469,8 @@ h3 {
   @media (max-width: 40.62em) {
     .services {
       grid-template-columns: repeat(1, 100%);
-      padding: 0; } }
+      padding: 0;
+      padding-bottom: 5rem; } }
   .services__service {
     padding: 5rem 2rem;
     transition: all 0.5s ease-out; }

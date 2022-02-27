@@ -71,7 +71,9 @@
     width: fit-content;
 
     @include response(tabS) {
-      margin-left: 2rem;
+      flex-direction: column;
+      margin: 0 auto;
+      row-gap: 3rem;
     }
   }
 

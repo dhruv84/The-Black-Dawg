@@ -12,6 +12,7 @@
   @include response(tabS) {
     grid-template-columns: repeat(1, 100%);
     padding: 0;
+    padding-bottom: 5rem;
   }
 
   &__service {
