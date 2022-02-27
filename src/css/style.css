@@ -139,7 +139,9 @@ h3 {
     position: relative; }
     @media (max-width: 80em) {
       .header__typography {
-        padding: 5rem; } }
+        padding: 5rem;
+        row-gap: 2.5rem;
+        height: 40rem; } }
     .header__typography-quote, .header__typography-quiz {
       width: 60rem;
       height: 25rem;
@@ -193,7 +195,7 @@ h3 {
   border-top: 2px solid; }
   @media (max-width: 80em) {
     .section {
-      padding: 5rem; } }
+      padding: 5rem 2rem; } }
   .section__heading {
     font-size: 8rem;
     font-weight: 300;

@@ -84,6 +84,8 @@
 
     @include response(tabX) {
       padding: 5rem;
+      row-gap: 2.5rem;
+      height: 40rem;
     }
 
     &-quote,
