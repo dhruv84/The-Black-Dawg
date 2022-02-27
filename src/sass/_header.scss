@@ -37,6 +37,10 @@
     white-space: nowrap;
     margin-left: -7.5rem;
     transition: transform 0.3s ease-out;
+
+    @include response(tabX) {
+      display: none;
+    }
   }
 
   &__markup-clock {
@@ -48,6 +52,11 @@
     top: 3rem;
     right: 10rem;
     color: $color-tertiary-2;
+
+    @include response(tabS) {
+      right: 2rem;
+      display: none;
+    }
   }
 
   &__heading {
@@ -60,6 +69,10 @@
     font-family: $font-3;
     font-weight: 300;
     width: fit-content;
+
+    @include response(tabS) {
+      margin-left: 2rem;
+    }
   }
 
   &__typography {
@@ -69,12 +82,20 @@
     padding: 0 15rem;
     position: relative;
 
+    @include response(tabX) {
+      padding: 5rem;
+    }
+
     &-quote,
     &-quiz {
       width: 60rem;
       height: 25rem;
       transition: all 0.2s ease-out;
       position: relative;
+
+      @include response(tabS) {
+        width: 100%;
+      }
 
       &::after {
         content: "";
@@ -84,11 +105,19 @@
         width: 56rem;
         height: 1px;
         background-color: $color-tertiary;
+
+        @include response(tabX) {
+          display: none;
+        }
       }
     }
 
     &-quote {
       text-align: end;
+
+      @include response(tabP) {
+        text-align: start;
+      }
 
       &::after {
         left: 62.5rem;
@@ -97,6 +126,10 @@
 
     &-quiz {
       align-self: flex-end;
+
+      @include response(tabP) {
+        align-self: flex-start;
+      }
 
       &::after {
         right: 62.5rem;

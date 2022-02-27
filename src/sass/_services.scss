@@ -5,6 +5,14 @@
   grid-template-columns: repeat(2, 50rem);
   position: relative;
 
+  @include response(tabP) {
+    grid-template-columns: repeat(1, 50rem);
+  }
+
+  @include response(tabS) {
+    grid-template-columns: repeat(1, 100%);
+  }
+
   &__service {
     padding: 5rem 2rem;
     transition: all 0.5s ease-out;
@@ -15,6 +23,10 @@
 
     &-divider {
       border-right: 0.1rem solid;
+
+      @include response(tabP) {
+        border-right: 0;
+      }
     }
 
     &-heading {

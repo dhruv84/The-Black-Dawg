@@ -128,4 +128,8 @@
   background-color: $color-tertiary-2;
   transform: translateY(-50%);
   color: $color-secondry;
+
+  @include response(tabX) {
+    display: none;
+  }
 }
