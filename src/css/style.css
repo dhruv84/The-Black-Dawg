@@ -263,6 +263,9 @@ h3 {
 
 .projects {
   margin-top: 10rem; }
+  @media (max-width: 40.62em) {
+    .projects {
+      margin-top: 0; } }
   .projects__project {
     display: flex;
     padding: 3rem;
@@ -270,6 +273,9 @@ h3 {
     align-items: center;
     border-bottom: 0.1rem solid #a4a5a6;
     transition: all 0.5s ease-out; }
+    @media (max-width: 40.62em) {
+      .projects__project {
+        padding: 3rem 0; } }
     @media (max-width: 56.25em) {
       .projects__project {
         flex-direction: column;
@@ -458,10 +464,14 @@ h3 {
       grid-template-columns: repeat(1, 50rem); } }
   @media (max-width: 40.62em) {
     .services {
-      grid-template-columns: repeat(1, 100%); } }
+      grid-template-columns: repeat(1, 100%);
+      padding: 0; } }
   .services__service {
     padding: 5rem 2rem;
     transition: all 0.5s ease-out; }
+    @media (max-width: 40.62em) {
+      .services__service {
+        padding: 3rem 2rem; } }
     .services__service:not(:last-child) {
       border-bottom: 0.1rem solid; }
     .services__service-divider {

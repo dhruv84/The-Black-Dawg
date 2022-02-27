@@ -11,11 +11,16 @@
 
   @include response(tabS) {
     grid-template-columns: repeat(1, 100%);
+    padding: 0;
   }
 
   &__service {
     padding: 5rem 2rem;
     transition: all 0.5s ease-out;
+
+    @include response(tabS) {
+      padding: 3rem 2rem;
+    }
 
     &:not(:last-child) {
       border-bottom: 0.1rem solid;
